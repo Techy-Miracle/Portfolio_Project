@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(226 232 240);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+li {
+  @apply px-4;
+  @apply cursor-pointer;
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  ) !important;
+}
+
+.nav_link:hover::after {
+  opacity: 1;
+}
+.nav_link {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.4s;
+  position: relative;
+  box-shadow: 0px 7px 72px 0px rgba(85, 85, 85, 0.07);
+}
+
+.nav_link:hover .nav_link:focus {
+  color: blue;
+}
+
+.nav_link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgb(226, 52, 81);
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.nav_link:hover::after {
+  opacity: 1;
+}
+
+.navbar_bg {
+  background-color: rgb(28, 84, 111);
+}
+
+.about_bg {
+  background-color: rgb(226 232 240);
+}
+
+.experience_bg {
+  background-color: rgb(199, 219, 230);
+}
+.projects_bg {
+  background-color: rgb(28, 84, 111);
+}
+
+.contact_bg {
+  background-color: rgb(226 232 240);
+}
