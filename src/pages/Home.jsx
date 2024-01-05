@@ -1,27 +1,40 @@
-import tech_1 from "../assets/tech_1.avif";
-import tech_2 from "../assets/tech_2.avif";
-import tech_3 from "../assets/tech_3.avif";
-import tech_4 from "../assets/tech_4.avif";
+import ai_1 from "../assets/ai_1.avif";
+import ai_4 from "../assets/ai_4.avif";
+import ai_7 from "../assets/ai_7.avif";
+import ai_new from "../assets/ai_new.avif";
+import Medicine from "../components/Medicine";
+import Technology from "../components/Technology";
+import Volunteer from "../components/Volunteer";
+import Research from "../components/Research";
+import Entrepreneurship from "../components/Entrepreneurship";
+import OpenSource from "../components/OpenSource";
+import Mentorship from "../components/Mentorship";
+import Hashnode from "../components/Hashnode";
 
-const Technology = () => {
+const Home = () => {
   return (
-    <section className='bg-[#CADEFC] mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
-      <div className='w-full h-full'>
-        <div className='w-full py-14 px-4'>
+    <section className='bg-[#CADEFC] md:px-32 mx-auto'>
+      <div name='home' className='w-full h-full'>
+        <div className='w-full py-16 px-4'>
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 '>
+            <img
+              className='w-full h-[450px] mx-auto mt-10'
+              src={ai_new}
+              alt='/'
+            />
             <div className='flex flex-col justify-center px-8'>
-              <p className='text-black font-bold text-4xl uppercase underline hover:text-teal-800'>
-                Technology
+              <p className='text-black font-bold text-3xl uppercase underline hover:text-teal-800'>
+                ARTIFICIAL INTELLIGENCE
               </p>
-              <p className='md:text-4xl sm:text-3xl text-4xl font-extrabold py-4 text-black hover:underline hover:text-teal-600'>
-                <a href='https://mfon.hashnode.dev/how-to-setup-monitoring-on-a-kubernetes-cluster-on-digitalocean'>
-                  Ever heard of DIGITAL OCEAN? <br />
-                  If YES, read faster... If NO, read slower!{" "}
+              <p className='md:text-4xl sm:text-3xl font-extrabold py-4 text-black hover:underline hover:text-teal-600'>
+                <a href='https://mfon.hashnode.dev/what-is-artificial-intelligence-anyways#heading-realistic-view-of-artificial-intelligence/'>
+                  Is AI really the future? <br />
+                  What is the future of work in the marketplaces?{" "}
                 </a>
               </p>
-              <p className='py-4 text-black font-normal italic text-lg'>
-                Setting up monitoring on a Kubernetes Cluster on DigitalOcean
-                has never been more simplified!
+              <p className='py-4 text-black font-normal text-lg italic'>
+                {` Soon there'd be no more humans in our working environment? Stop
+                  talking already! Find out!`}
               </p>
               <p className='py-2 text-black'>
                 By{" "}
@@ -31,13 +44,12 @@ const Technology = () => {
                 | December 12, 2023
               </p>
             </div>
-            <img className='w-full h-[450px] mx-auto' src={tech_3} alt='/' />
           </div>
         </div>
 
         <div className='mt-8 grid lg:grid-cols-3 gap-10 mx-auto'>
           <div className='hover:shadow-2xl rounded overflow-hidden shadow-md'>
-            <img src={tech_1} alt='/' className='w-full h-[270px]' />
+            <img src={ai_4} alt='/' className='w-full h-[400px]' />
             <div className='m-4'>
               <span className='font-bold text-xl hover:text-blue-600'>
                 <a href='https://mfon.hashnode.dev/what-you-need-to-know-to-get-started-with-api-documentation'>
@@ -53,7 +65,7 @@ const Technology = () => {
           </div>
 
           <div className='hover:shadow-2xl rounded overflow-hidden shadow-md bg-[#CADEFC]'>
-            <img src={tech_2} alt='/' className='w-full h-[270px]' />
+            <img src={ai_7} alt='/' className='w-full h-[400px]' />
             <div className='m-4'>
               <span className='font-bold text-xl hover:text-blue-600'>
                 <a href='https://mfon.hashnode.dev/understanding-supply-chain-vulnerabilities-and-how-to-protect-them-with-snyk'>
@@ -70,7 +82,7 @@ const Technology = () => {
           </div>
 
           <div className='hover:shadow-2xl rounded overflow-hidden shadow-md bg-[#CADEFC]'>
-            <img src={tech_4} alt='/' className='w-full h-[270px]' />
+            <img src={ai_1} alt='/' className='w-full h-[400px]' />
             <div className='m-4'>
               <span className='font-bold text-xl hover:text-blue-600'>
                 <a href='https://mfon.hashnode.dev/cidr-blocks-subnetting-in-aws-vpcs'>
@@ -85,9 +97,25 @@ const Technology = () => {
             </div>
           </div>
         </div>
+
+        <Medicine />
+
+        <Technology />
+
+        <Hashnode />
+
+        <Research />
+
+        <Entrepreneurship />
+
+        <OpenSource />
+
+        <Mentorship />
+
+        <Volunteer />
       </div>
     </section>
   );
 };
 
-export default Technology;
+export default Home;
