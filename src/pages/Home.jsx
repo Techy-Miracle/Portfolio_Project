@@ -1,6 +1,4 @@
-import React from "react";
 import ai_1 from "../assets/ai_1.avif";
-import ai_2 from "../assets/ai_2.avif";
 import ai_4 from "../assets/ai_4.avif";
 import ai_7 from "../assets/ai_7.avif";
 import ai_new from "../assets/ai_new.avif";
@@ -35,8 +33,8 @@ const Home = () => {
                 </a>
               </p>
               <p className='py-4 text-black font-normal text-lg italic'>
-                Soon there'd be no more humans in our working environment? Stop
-                talking already! Find out!
+                {` Soon there'd be no more humans in our working environment? Stop
+                  talking already! Find out!`}
               </p>
               <p className='py-2 text-black'>
                 By{" "}

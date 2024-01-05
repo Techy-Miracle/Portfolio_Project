@@ -1,8 +1,5 @@
-import React from "react";
 import open_1 from "../assets/open_1.avif";
-import open_2 from "../assets/open_2.avif";
 import open_3 from "../assets/open_3.webp";
-import open_4 from "../assets/open_4.avif";
 import open_5 from "../assets/open_5.avif";
 
 const OpenSource = () => {
@@ -72,4 +69,4 @@ const OpenSource = () => {
   );
 };
 
-export default Open_Source;
+export default OpenSource;

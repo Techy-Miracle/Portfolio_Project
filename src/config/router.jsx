@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Projects from "../pages/Projects";
+import Skills from "../components/Experience";
 export default function appRouter() {
   return createBrowserRouter([
     {
@@ -17,6 +18,10 @@ export default function appRouter() {
         {
           path: "/about",
           element: <About />,
+        },
+        {
+          path: "/experience",
+          element: <Skills />,
         },
         {
           path: "/contact",
