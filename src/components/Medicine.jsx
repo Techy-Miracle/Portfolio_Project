@@ -1,16 +1,15 @@
 import med_5 from "../assets/med_5.jpg";
 import med_2 from "../assets/med_2.webp";
 import med_3 from "../assets/med_3.webp";
+import ReactTyped from "react-typed";
 
 const Medicine = () => {
   return (
     <>
-      <section className='bg-black mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
+      <section className='bg-[#022c43] mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
         <div className='w-full py-8 max-w-[1240px] mx-auto grid md:grid-cols-2  '>
           <div className='flex flex-col justify-center '>
-            <p className='text-white font-bold text-4xl uppercase underline hover:text-blue-500'>
-              Medicine
-            </p>
+            <ReactTyped className='pl-4 md:pl-2 font-bold text-5xl uppercase mt-5 py-2' strings={['Medicine']} style={{ color: ['white'] }} typeSpeed={50} backSpeed={100} loop />
           </div>
         </div>
 

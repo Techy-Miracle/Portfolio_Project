@@ -10,6 +10,7 @@ import Entrepreneurship from "../components/Entrepreneurship";
 import OpenSource from "../components/OpenSource";
 import Mentorship from "../components/Mentorship";
 import Hashnode from "../components/Hashnode";
+import ReactTyped from "react-typed";
 
 const Home = () => {
   return (
@@ -18,31 +19,18 @@ const Home = () => {
         <div className='w-full py-16 px-4'>
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 '>
             <img
-              className='w-full h-[450px] mx-auto mt-10'
+              className='w-full h-[450px] mx-auto mt-14'
               src={ai_new}
               alt='/'
             />
-            <div className='flex flex-col justify-center px-8'>
-              <p className='text-black font-bold text-3xl uppercase underline hover:text-teal-800'>
-                ARTIFICIAL INTELLIGENCE
-              </p>
-              <p className='md:text-4xl sm:text-3xl font-extrabold py-4 text-black hover:underline hover:text-teal-600'>
-                <a href='https://mfon.hashnode.dev/what-is-artificial-intelligence-anyways#heading-realistic-view-of-artificial-intelligence/'>
-                  Is AI really the future? <br />
-                  What is the future of work in the marketplaces?{" "}
-                </a>
-              </p>
-              <p className='py-4 text-black font-normal text-lg italic'>
-                {` Soon there'd be no more humans in our working environment? Stop
-                  talking already! Find out!`}
-              </p>
-              <p className='py-2 text-black'>
-                By{" "}
-                <span className='text-neutral-500'>
-                  <a href='https://hashnode.com/@Mfon'>Mfon Nta</a>
-                </span>{" "}
-                | December 12, 2023
-              </p>
+            <div className='flex flex-col justify-center'>
+              <ReactTyped className='md:text-5xl sm:text-4xl text-2xl md:pl-4 pl-2 font-bold uppercase hover:text-teal-800 mt-5 py-2' strings={['Artificial Intelligence']} style={{ color: ['#1c546f'] }} typeSpeed={50} backSpeed={100} loop />
+
+              <p className='md:text-4xl sm:text-3xl font-extrabold py-4 px-4 text-slate-800 hover:underline hover:text-teal-600'><a href='https://mfon.hashnode.dev/what-is-artificial-intelligence-anyways#heading-realistic-view-of-artificial-intelligence/'>What is Artificial Intelligence Anyways?</a></p>
+              <p className='md:py-4 px-4 text-slate-800 text-lg font-semibold '>Machine Learning, Data Science and A Realistic View of Artificial Intelligence.</p>
+              <p className='py-4 px-4 text-black'>By <span className='text-neutral-500 text-lg font-medium'><a href='https://hashnode.com/@Mfon'>Mfon Nta</a></span> | May 09, 2023.</p>
+
+
             </div>
           </div>
         </div>
@@ -113,8 +101,16 @@ const Home = () => {
         <Mentorship />
 
         <Volunteer />
+
+
+
+
+
+
       </div>
+
     </section>
+    
   );
 };
 
