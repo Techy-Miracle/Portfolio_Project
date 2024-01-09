@@ -1,7 +1,6 @@
 import res_1 from "../assets/res_1.webp";
 import res_2 from "../assets/res_2.webp";
 import res_4 from "../assets/res_4.avif";
-import ReactTyped from "react-typed";
 
 const Research = () => {
   return (
@@ -9,13 +8,9 @@ const Research = () => {
       <section className='bg-white mt-10 md:px-32 px-4 md:mx-auto mx-auto pb-10'>
         <div className='w-full py-8 max-w-[1240px] mx-auto grid md:grid-cols-2  '>
           <div className='flex flex-col justify-center '>
-<<<<<<< HEAD
             <p className='text-black font-bold md:text-4xl text-2xl text-center md:text-start uppercase underline hover:text-blue-500'>
               Research
             </p>
-=======
-            <ReactTyped className='pl-4 md:pl-2 font-bold text-4xl uppercase mt-5 py-2' strings={['Research']} style={{ color: ['#1c546f'] }} typeSpeed={50} backSpeed={140} loop />
->>>>>>> 070d265c38947a1bc6afac7809359b3541599097
           </div>
         </div>
 

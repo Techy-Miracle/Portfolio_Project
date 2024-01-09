@@ -1,7 +1,6 @@
 import mentor_2 from "../assets/mentor_2.avif";
 import mentor_3 from "../assets/mentor_3.avif";
 import mfon_image from "../assets/mfon_image.jpeg";
-import ReactTyped from "react-typed";
 
 const Mentorship = () => {
   return (
@@ -9,13 +8,9 @@ const Mentorship = () => {
       <section className='bg-black mt-10 md:px-32 px-4 md:mx-auto mx-auto pb-10'>
         <div className='w-full py-8 max-w-[1240px] mx-auto grid md:grid-cols-2  '>
           <div className='flex flex-col justify-center '>
-<<<<<<< HEAD
             <p className='text-white font-bold md:text-4xl text-2xl text-center md:text-start uppercase underline hover:text-blue-500 '>
               Mentorship
             </p>
-=======
-            <ReactTyped className='pl-4 md:pl-2 font-bold text-5xl uppercase mt-5 py-2' strings={['Mentorship']} style={{ color: ['white'] }} typeSpeed={50} backSpeed={100} loop />
->>>>>>> 070d265c38947a1bc6afac7809359b3541599097
           </div>
         </div>
 
