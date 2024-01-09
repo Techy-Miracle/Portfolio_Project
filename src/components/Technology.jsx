@@ -5,15 +5,15 @@ import tech_4 from "../assets/tech_4.avif";
 
 const Technology = () => {
   return (
-    <section className='bg-[#CADEFC] mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
+    <section className='bg-[#CADEFC] md:mt-10 md:px-32 md:mx-auto mx-auto md:pb-10'>
       <div className='w-full h-full'>
         <div className='w-full py-14 px-4'>
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 '>
             <div className='flex flex-col justify-center px-8'>
-              <p className='text-black font-bold text-4xl uppercase underline hover:text-teal-800'>
+              <p className='text-black font-bold text-4xl uppercase text-center md:text-start underline hover:text-teal-800'>
                 Technology
               </p>
-              <p className='md:text-4xl sm:text-3xl text-4xl font-extrabold py-4 text-black hover:underline hover:text-teal-600'>
+              <p className='md:text-4xl  font-extrabold py-4 text-center md:text-start  text-black hover:underline hover:text-teal-600'>
                 <a href='https://mfon.hashnode.dev/how-to-setup-monitoring-on-a-kubernetes-cluster-on-digitalocean'>
                   Ever heard of DIGITAL OCEAN? <br />
                   If YES, read faster... If NO, read slower!{" "}
@@ -35,7 +35,7 @@ const Technology = () => {
           </div>
         </div>
 
-        <div className='mt-8 grid lg:grid-cols-3 gap-10 mx-auto'>
+        <div className='mt-10 grid px-4 md:px-0 lg:grid-cols-3 gap-10 mx-auto'>
           <div className='hover:shadow-2xl rounded overflow-hidden shadow-md'>
             <img src={tech_1} alt='/' className='w-full h-[270px]' />
             <div className='m-4'>

@@ -6,16 +6,16 @@ import mfon_image from "../assets/mfon_image.jpeg";
 const Mentorship = () => {
   return (
     <>
-      <section className='bg-black mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
+      <section className='bg-black mt-10 md:px-32 px-4 md:mx-auto mx-auto pb-10'>
         <div className='w-full py-8 max-w-[1240px] mx-auto grid md:grid-cols-2  '>
           <div className='flex flex-col justify-center '>
-            <p className='text-white font-bold text-4xl uppercase underline hover:text-blue-500 '>
+            <p className='text-white font-bold md:text-4xl text-2xl text-center md:text-start uppercase underline hover:text-blue-500 '>
               Mentorship
             </p>
           </div>
         </div>
 
-        <div className='mt-8 grid lg:grid-cols-3 gap-10 mx-auto'>
+        <div className='md:mt-8  grid lg:grid-cols-3 gap-10 mx-auto'>
           <div className='hover:shadow-2xl rounded overflow-hidden shadow-md bg-white'>
             <img src={mfon_image} alt='/' className='h-[310px] w-[400px]' />
             <div className='m-4'>

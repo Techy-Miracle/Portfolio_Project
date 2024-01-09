@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <div className='w-full h-full bg-[#1c546F]'>
-      <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-4 text-gray-300'>
+      <div className='md:max-w-[1240px] w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-4 text-gray-300'>
         <div>
           <h1 className='w-full text-3xl font-bold text-white uppercase'>
             Mfon Thelma Nta.
@@ -21,7 +21,7 @@ const Footer = () => {
             launch.`}
           </p>
 
-          <div className='flex justify-between md:w-[70%] my-4 mt-10 cursor-pointer text-teal-600 '>
+          <div className='flex justify-between md:w-[70%] w-1/2 my-4 mt-10 cursor-pointer text-teal-600 '>
             <a href='https://github.com/Mfonn'>
               <FaGithub
                 size={30}
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='lg:col-span-2 flex justify-around mt-10'>
+        <div className='lg:col-span-2  grid grid-cols-2 md:grid-cols-3 gap-6 w-full mt-10'>
           <div>
             <ul>
               <li className='font-semibold text-white uppercase bg-pink-950'>
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <ul className='flex'>
+        <ul className='md:flex hidden'>
           <li>
             <Link to='home' smooth={true} duration={500} className='nav_link'>
               {" "}

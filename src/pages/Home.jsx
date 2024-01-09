@@ -10,23 +10,34 @@ import Entrepreneurship from "../components/Entrepreneurship";
 import OpenSource from "../components/OpenSource";
 import Mentorship from "../components/Mentorship";
 import Hashnode from "../components/Hashnode";
+import Loader from "../components/Loader";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <section className='bg-[#CADEFC] md:px-32 mx-auto'>
       <div name='home' className='w-full h-full'>
-        <div className='w-full py-16 px-4'>
+        <section className='w-full py-16 px-4'>
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 '>
             <img
-              className='w-full h-[450px] mx-auto mt-10'
+              className='w-full h-[450px] bg-center bg-cover object-cover mx-auto mt-10'
               src={ai_new}
               alt='/'
             />
             <div className='flex flex-col justify-center px-8'>
-              <p className='text-black font-bold text-3xl uppercase underline hover:text-teal-800'>
+              <p className='text-black font-bold md:text-3xl mt-3 md:mt-0 text-xl text-center md:text-start uppercase underline hover:text-teal-800'>
                 ARTIFICIAL INTELLIGENCE
               </p>
-              <p className='md:text-4xl sm:text-3xl font-extrabold py-4 text-black hover:underline hover:text-teal-600'>
+              <p className='md:text-4xl   font-extrabold py-4 text-black hover:underline hover:text-teal-600'>
                 <a href='https://mfon.hashnode.dev/what-is-artificial-intelligence-anyways#heading-realistic-view-of-artificial-intelligence/'>
                   Is AI really the future? <br />
                   What is the future of work in the marketplaces?{" "}
@@ -45,10 +56,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className='mt-8 grid lg:grid-cols-3 gap-10 mx-auto'>
-          <div className='hover:shadow-2xl rounded overflow-hidden shadow-md'>
+        <div className='mt-8 grid lg:grid-cols-3  py-16 px-4 gap-10 mx-auto'>
+          <div className='hover:shadow-2xl rounded overflow-hidden '>
             <img src={ai_4} alt='/' className='w-full h-[400px]' />
             <div className='m-4'>
               <span className='font-bold text-xl hover:text-blue-600'>
@@ -64,7 +75,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='hover:shadow-2xl rounded overflow-hidden shadow-md bg-[#CADEFC]'>
+          <div className='hover:shadow-2xl rounded overflow-hidden  bg-[#CADEFC]'>
             <img src={ai_7} alt='/' className='w-full h-[400px]' />
             <div className='m-4'>
               <span className='font-bold text-xl hover:text-blue-600'>
@@ -81,7 +92,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='hover:shadow-2xl rounded overflow-hidden shadow-md bg-[#CADEFC]'>
+          <div className='hover:shadow-2xl rounded overflow-hidden  bg-[#CADEFC]'>
             <img src={ai_1} alt='/' className='w-full h-[400px]' />
             <div className='m-4'>
               <span className='font-bold text-xl hover:text-blue-600'>

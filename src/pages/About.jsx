@@ -1,8 +1,19 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import Loader from "../components/Loader";
 
 const About = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
-    <section className='about_bg'>
+    <section className='about_bg pt-32 md:pt-0 pb-24 md:pb-0'>
       <div name='about' className='w-full h-screen'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
           {/* <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'> */}
@@ -28,7 +39,7 @@ const About = () => {
               </p>
               <div>
                 <a href='mfonnta05@gmail.com'>
-                  <button className='text-white group border-2 px-6 mx-8 py-3 my-2 flex items-center bg-slate-800 hover:bg-pink-600 hover:border-pink-600'>
+                  <button className='text-white group border-2 px-6 md:mx-8 py-3 my-2 flex items-center bg-slate-800 hover:bg-pink-600 hover:border-pink-600'>
                     Contact Me
                     <span className='group-hover:rotate-90 duration-300'>
                       <HiArrowNarrowRight className='ml-3' />
@@ -38,7 +49,7 @@ const About = () => {
               </div>
             </div>
             <div>
-              <div className='mt-5 text-2xl'>
+              <div className='md:mt-5 text-xl md:text-2xl'>
                 <p>
                   I am a Software Developer interested in using technology to
                   improve lives.
