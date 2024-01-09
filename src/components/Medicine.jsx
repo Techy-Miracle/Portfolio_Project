@@ -1,9 +1,11 @@
 import med_5 from "../assets/med_5.jpg";
 import med_2 from "../assets/med_2.webp";
 import med_3 from "../assets/med_3.webp";
+import ReactTyped from "react-typed";
 
 const Medicine = () => {
   return (
+<<<<<<< HEAD
     <section className='bg-black mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
       <div className='w-full py-8 max-w-[1240px] mx-auto grid md:grid-cols-2  '>
         <div className='flex flex-col justify-center '>
@@ -28,6 +30,13 @@ const Medicine = () => {
                 backward?.
               </a>
             </span>
+=======
+    <>
+      <section className='bg-[#022c43] mt-10 md:px-32 md:mx-auto mx-auto pb-10'>
+        <div className='w-full py-8 max-w-[1240px] mx-auto grid md:grid-cols-2  '>
+          <div className='flex flex-col justify-center '>
+            <ReactTyped className='pl-4 md:pl-2 font-bold text-5xl uppercase mt-5 py-2' strings={['Medicine']} style={{ color: ['white'] }} typeSpeed={50} backSpeed={100} loop />
+>>>>>>> 070d265c38947a1bc6afac7809359b3541599097
           </div>
         </div>
 

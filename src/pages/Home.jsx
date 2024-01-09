@@ -10,9 +10,13 @@ import Entrepreneurship from "../components/Entrepreneurship";
 import OpenSource from "../components/OpenSource";
 import Mentorship from "../components/Mentorship";
 import Hashnode from "../components/Hashnode";
+<<<<<<< HEAD
 import Loader from "../components/Loader";
 import { useState } from "react";
 import { useEffect } from "react";
+=======
+import ReactTyped from "react-typed";
+>>>>>>> 070d265c38947a1bc6afac7809359b3541599097
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -29,6 +33,7 @@ const Home = () => {
         <section className='w-full py-16 px-4'>
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 '>
             <img
+<<<<<<< HEAD
               className='w-full h-[450px] bg-center bg-cover object-cover mx-auto mt-10'
               src={ai_new}
               alt='/'
@@ -54,6 +59,20 @@ const Home = () => {
                 </span>{" "}
                 | December 12, 2023
               </p>
+=======
+              className='w-full h-[450px] mx-auto mt-14'
+              src={ai_new}
+              alt='/'
+            />
+            <div className='flex flex-col justify-center'>
+              <ReactTyped className='md:text-5xl sm:text-4xl text-2xl md:pl-4 pl-2 font-bold uppercase hover:text-teal-800 mt-5 py-2' strings={['Artificial Intelligence']} style={{ color: ['#1c546f'] }} typeSpeed={50} backSpeed={100} loop />
+
+              <p className='md:text-4xl sm:text-3xl font-extrabold py-4 px-4 text-slate-800 hover:underline hover:text-teal-600'><a href='https://mfon.hashnode.dev/what-is-artificial-intelligence-anyways#heading-realistic-view-of-artificial-intelligence/'>What is Artificial Intelligence Anyways?</a></p>
+              <p className='md:py-4 px-4 text-slate-800 text-lg font-semibold '>Machine Learning, Data Science and A Realistic View of Artificial Intelligence.</p>
+              <p className='py-4 px-4 text-black'>By <span className='text-neutral-500 text-lg font-medium'><a href='https://hashnode.com/@Mfon'>Mfon Nta</a></span> | May 09, 2023.</p>
+
+
+>>>>>>> 070d265c38947a1bc6afac7809359b3541599097
             </div>
           </div>
         </section>
@@ -124,8 +143,16 @@ const Home = () => {
         <Mentorship />
 
         <Volunteer />
+
+
+
+
+
+
       </div>
+
     </section>
+    
   );
 };
 

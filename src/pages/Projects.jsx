@@ -9,10 +9,21 @@ import { useEffect } from "react";
 import Loader from "../components/Loader";
 
 const Projects = () => {
+<<<<<<< HEAD
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
   }, []);
+=======
+    return (
+        <section className='projects_bg pb-10'>
+            <div name='projects' className='w-full md:h-screen text-gray-300 '>
+                <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+                    <div className='pb-8 mt-32 '>
+                        <p className='text-5xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Projects</p>
+                        <p className='py-6 text-xl uppercase'>Check out some of my recent projects</p>
+                    </div>
+>>>>>>> 070d265c38947a1bc6afac7809359b3541599097
 
   if (loading) {
     return <Loader />;
