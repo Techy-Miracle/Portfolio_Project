@@ -6,10 +6,21 @@ import Github from "../assets/github.png";
 import Dig from "../assets/digital ocean.png";
 import mongo from "../assets/mongo.png";
 import Oracle from "../assets/oracle.jpeg";
+import { useState } from "react";
+import { useEffect } from "react";
+import Loader from "../components/Loader";
 
 const Skills = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
-    <section className='experience_bg'>
+    <section className='experience_bg pt-36 md:pt-0'>
       <div name='experience' className='w-full h-screen'>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
